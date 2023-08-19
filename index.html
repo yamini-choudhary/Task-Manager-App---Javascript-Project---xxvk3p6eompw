@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="todo-container">
+      <form id="add-form">
+        <input type="text" placeholder="Enter New Task" id="todo-input" />
+        <button type="submit" id="todo-btn">ADD+</button>
+      </form>
+
+      <div class="boxes-container">
+        <div class="box" id="to-do">
+          <h3 class="heading">Open</h3>
+          <div class="progress-bar1"></div>
+          <p class="task" draggable="true">Playing badminton</p>
+
+          <p class="task" draggable="true">Playing football</p>
+          <p class="task" draggable="true">Completed Assignment</p>
+        </div>
+
+        <div class="box" id="doing">
+          <h3 class="heading">In Progress</h3>
+          <div class="progress-bar2"></div>
+          <p class="task" draggable="true">Watching a movie</p>
+        </div>
+
+        <div class="box" id="review">
+          <h3 class="heading">In Review</h3>
+          <div class="progress-bar3"></div>
+          <p class="task" draggable="true">Studying physics</p>
+        </div>
+
+        <div class="box" id="done">
+          <h3 class="heading">Done</h3>
+          <div class="progress-bar4"></div>
+          <p class="task" draggable="true">Learn Javascript</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <textarea id="taskDescription" rows="3" cols="50"></textarea>
+        <button id="saveDescription" class="">Save</button>
+      </div>
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
 
